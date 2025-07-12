@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,3 +29,51 @@
   <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register - ReWear</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded shadow-md w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Create Your ReWear Account</h2>
+    <form id="registerForm" class="space-y-4" novalidate>
+      <div>
+        <label for="name" class="block text-sm font-medium mb-1">Full Name</label>
+        <input id="name" type="text" name="name" required aria-describedby="nameError" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <p id="nameError" class="mt-1 text-sm text-red-600 hidden">Please enter your full name.</p>
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium mb-1">Email Address</label>
+        <input id="email" type="email" name="email" required aria-describedby="emailError" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <p id="emailError" class="mt-1 text-sm text-red-600 hidden">Please enter a valid email address.</p>
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium mb-1">Password</label>
+        <input id="password" type="password" name="password" required aria-describedby="passwordError" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <p id="passwordError" class="mt-1 text-sm text-red-600 hidden">Password is required.</p>
+      </div>
+      <div>
+        <label for="location" class="block text-sm font-medium mb-1">Location</label>
+        <input id="location" type="text" name="location" required aria-describedby="locationError" class="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <p id="locationError" class="mt-1 text-sm text-red-600 hidden">Location is required.</p>
+      </div>
+      <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded focus:outline-none focus:ring-4 focus:ring-green-300">
+        Register
+      </button>
+    </form>
+    <p class="text-sm text-center mt-4">
+      Already have an account?
+      <a href="auth.html" class="text-green-600 hover:underline">Login</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> e0adf37 (Update modified pages)
