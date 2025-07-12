@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -39,3 +40,193 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ReWear – Sustainable Fashion Community</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Unique styles for the new index page */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f0f9f4, #d0e8d0);
+        color: #2f4f2f;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #3a6b35;
+        color: #e6f0e6;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      }
+      header h1 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      nav a {
+        color: #e6f0e6;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+      nav a:hover {
+        color: #a3c293;
+      }
+      .hero {
+        text-align: center;
+        padding: 6rem 2rem 4rem;
+      }
+      .hero h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 600px;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
+      }
+      .btn-primary {
+        background-color: #4a8c4a;
+        color: white;
+        padding: 0.75rem 2rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        margin: 0 0.5rem;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .btn-primary:hover {
+        background-color: #3a6b35;
+      }
+      .features {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        padding: 3rem 2rem;
+        flex-wrap: wrap;
+      }
+      .feature-item {
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        padding: 2rem;
+        max-width: 280px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .feature-item:hover {
+        transform: translateY(-10px);
+      }
+      .feature-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .feature-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .feature-desc {
+        font-size: 1rem;
+        color: #4a6b4a;
+      }
+      .community {
+        background-color: #e6f0e6;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .community h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+      .community p {
+        max-width: 600px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        line-height: 1.5;
+        color: #3a6b35;
+      }
+      footer {
+        background-color: #3a6b35;
+        color: #e6f0e6;
+        text-align: center;
+        padding: 1rem 2rem;
+        font-size: 0.9rem;
+        margin-top: 4rem;
+      }
+      @media (max-width: 768px) {
+        .features {
+          flex-direction: column;
+          align-items: center;
+        }
+        .feature-item {
+          max-width: 90%;
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ReWear</h1>
+      <nav>
+        <a href="landing.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="admin.html">Admin</a>
+        <a href="auth.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </header>
+
+    <section class="hero" role="banner" aria-label="Platform introduction">
+      <h2>Wear Sustainably, Live Responsibly</h2>
+      <p>Join a community passionate about sustainable fashion. Swap clothes, earn points, and make a positive impact on the planet.</p>
+      <a href="landing.html" class="btn-primary" role="button">Get Started</a>
+      <a href="landing.html#features" class="btn-primary" role="button">Learn More</a>
+    </section>
+
+    <section id="features" class="features" aria-label="Platform features">
+      <article class="feature-item">
+        <div class="feature-icon" aria-hidden="true">♻️</div>
+        <h3 class="feature-title">Eco-Friendly Swaps</h3>
+        <p class="feature-desc">Exchange your clothes directly with others to reduce waste and promote reuse.</p>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon" aria-hidden="true">🔐</div>
+        <h3 class="feature-title">Secure Authentication</h3>
+        <p class="feature-desc">Sign up and log in safely with email and password protection.</p>
+      </article>
+      <article class="feature-item">
+        <div class="feature-icon" aria-hidden="true">🎯</div>
+        <h3 class="feature-title">Community Focused</h3>
+        <p class="feature-desc">Connect with eco-conscious users and thrift lovers who share your values.</p>
+      </article>
+    </section>
+
+    <section class="community" aria-label="Community message">
+      <h3>Our Community Speaks</h3>
+      <p>"ReWear has transformed how I shop and share clothes. It's more than a platform; it's a movement!" – Alex P.</p>
+    </section>
+
+    <footer>
+      &copy; 2025 ReWear. All rights reserved.
+    </footer>
+  </body>
+</html>
+>>>>>>> e0adf37 (Update modified pages)
