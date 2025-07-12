@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   highlightActiveNav();
-<<<<<<< HEAD
   initLogin();
   initRegister();
-=======
->>>>>>> e0adf37 (Update modified pages)
+  initDashboard();
   initFormValidation();
   initImageUploadPreview();
   initSwapActions();
@@ -12,24 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
   initAdminPanel();
   loadUserProfile();
   initLogout();
-<<<<<<< HEAD
 });
 
-// === Highlight active nav (if nav is used) ===
+// === Highlight Active Nav ===
 function highlightActiveNav() {
   const path = window.location.pathname.split('/').pop();
   const navLinks = document.querySelectorAll('nav a, header button');
-=======
-  initLogin();     // login form + auto-login handler
-  initRegister();  // registration form
-  initDashboard(); // dashboard protection and user data
-});
-
-function highlightActiveNav() {
-  const path = window.location.pathname.split('/').pop();
-  const navLinks = document.querySelectorAll('nav a, header button');
-
->>>>>>> e0adf37 (Update modified pages)
   navLinks.forEach(link => {
     if (link.getAttribute('href') === path) {
       link.classList.add('underline', 'font-semibold', 'text-green-600');
@@ -37,41 +23,13 @@ function highlightActiveNav() {
   });
 }
 
-<<<<<<< HEAD
 // === Login Functionality ===
-=======
-function initFormValidation() {
-  const form = document.querySelector('form');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    const requiredFields = form.querySelectorAll('[required]');
-    let valid = true;
-
-    requiredFields.forEach(field => {
-      if (!field.value.trim()) {
-        field.classList.add('border-red-500');
-        valid = false;
-      } else {
-        field.classList.remove('border-red-500');
-      }
-    });
-
-    if (!valid) {
-      e.preventDefault();
-      showToast('Please fill in all required fields.', 'error');
-    }
-  });
-}
-
->>>>>>> e0adf37 (Update modified pages)
 function initLogin() {
   const form = document.getElementById('loginForm');
   if (!form) return;
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-
     const email = form.email.value.trim();
     const password = form.password.value.trim();
 
@@ -93,22 +51,6 @@ function initLogin() {
       showToast('Invalid email or password.', 'error');
     }
   });
-<<<<<<< HEAD
-}
-
-// === Registration Functionality ===
-function initRegister() {
-  const form = document.getElementById('registerForm');
-  if (!form) return;
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const password = form.password.value.trim();
-    const location = form.location.value.trim();
-=======
 
   // Auto-login from URL params
   const urlParams = new URLSearchParams(window.location.search);
@@ -124,18 +66,17 @@ function initRegister() {
   }
 }
 
+// === Registration Functionality ===
 function initRegister() {
-  const registerForm = document.getElementById('registerForm');
-  if (!registerForm) return;
+  const form = document.getElementById('registerForm');
+  if (!form) return;
 
-  registerForm.addEventListener('submit', e => {
+  form.addEventListener('submit', e => {
     e.preventDefault();
-
-    const name = registerForm.name.value.trim();
-    const email = registerForm.email.value.trim();
-    const password = registerForm.password.value.trim();
-    const location = registerForm.location.value.trim();
->>>>>>> e0adf37 (Update modified pages)
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const password = form.password.value.trim();
+    const location = form.location.value.trim();
 
     if (!name || !email || !password || !location) {
       showToast('All fields are required.', 'error');
@@ -160,18 +101,13 @@ function initRegister() {
     users.push(newUser);
     localStorage.setItem('rewearUsers', JSON.stringify(users));
     showToast('Registration successful! Redirecting...');
-<<<<<<< HEAD
-=======
-
->>>>>>> e0adf37 (Update modified pages)
     setTimeout(() => {
       window.location.href = 'auth.html';
     }, 1200);
   });
 }
 
-<<<<<<< HEAD
-// === Form Validation (fallback for required fields) ===
+// === Form Validation (Fallback) ===
 function initFormValidation() {
   const form = document.querySelector('form');
   if (!form) return;
@@ -196,9 +132,7 @@ function initFormValidation() {
   });
 }
 
-// === Image Preview for Upload ===
-=======
->>>>>>> e0adf37 (Update modified pages)
+// === Image Upload Preview ===
 function initImageUploadPreview() {
   const fileInput = document.querySelector('input[type="file"]');
   if (!fileInput) return;
@@ -226,10 +160,7 @@ function initImageUploadPreview() {
   });
 }
 
-<<<<<<< HEAD
-// === Toast Messages ===
-=======
->>>>>>> e0adf37 (Update modified pages)
+// === Toast Notification ===
 function showToast(message, type = 'success') {
   const toast = document.createElement('div');
   toast.textContent = message;
@@ -240,10 +171,7 @@ function showToast(message, type = 'success') {
   setTimeout(() => toast.remove(), 3000);
 }
 
-<<<<<<< HEAD
-// === Swap and Redeem Buttons ===
-=======
->>>>>>> e0adf37 (Update modified pages)
+// === Swap / Redeem Buttons ===
 function initSwapActions() {
   const swapBtn = document.querySelector('#swapRequest');
   const redeemBtn = document.querySelector('#redeemPoints');
@@ -264,10 +192,7 @@ function initSwapActions() {
   }
 }
 
-<<<<<<< HEAD
 // === Item Cards Loader ===
-=======
->>>>>>> e0adf37 (Update modified pages)
 function loadItemCards() {
   const itemList = document.querySelector('#itemList');
   if (!itemList) return;
@@ -308,10 +233,7 @@ function getMockItems() {
   ];
 }
 
-<<<<<<< HEAD
 // === Admin Panel Actions ===
-=======
->>>>>>> e0adf37 (Update modified pages)
 function initAdminPanel() {
   const approveBtns = document.querySelectorAll('.approve-btn');
   const rejectBtns = document.querySelectorAll('.reject-btn');
@@ -331,10 +253,7 @@ function initAdminPanel() {
   );
 }
 
-<<<<<<< HEAD
 // === Dashboard Profile Loader ===
-=======
->>>>>>> e0adf37 (Update modified pages)
 function loadUserProfile() {
   if (!window.location.pathname.includes('dashboard.html')) return;
 
@@ -355,10 +274,7 @@ function loadUserProfile() {
   if (pointsEl) pointsEl.textContent = `${user.points || 0} pts`;
 }
 
-<<<<<<< HEAD
 // === Logout Handler ===
-=======
->>>>>>> e0adf37 (Update modified pages)
 function initLogout() {
   const logoutBtn = document.getElementById('logoutBtn');
   if (!logoutBtn) return;
@@ -372,10 +288,7 @@ function initLogout() {
   });
 }
 
-<<<<<<< HEAD
-// === Animation Keyframes for Toasts ===
-=======
-// Dashboard guard + filler
+// === Dashboard Auth Guard ===
 function initDashboard() {
   if (!window.location.pathname.includes('dashboard.html')) return;
 
@@ -386,15 +299,13 @@ function initDashboard() {
   }
 
   const user = JSON.parse(userData);
-
   document.getElementById('profileName').textContent = user.name;
   document.getElementById('profileEmail').textContent = user.email;
   document.getElementById('profileLocation').textContent = user.location || 'Not set';
   document.getElementById('profilePoints').textContent = `${user.points || 0} pts`;
 }
 
-// Inject fade animation
->>>>>>> e0adf37 (Update modified pages)
+// === Toast Animation ===
 const style = document.createElement('style');
 style.innerHTML = `
 @keyframes fade-in {
