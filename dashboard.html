@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReWear – User Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-green-700 text-white p-4 shadow">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">ReWear Dashboard</h1>
+        <button id="logoutBtn" class="hover:underline">Logout</button>
+      </div>
+    </header>
+
+    <div class="flex max-w-7xl mx-auto mt-8 px-4">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-white rounded shadow p-4 mr-6 space-y-4">
+        <div>
+          <h2 class="text-lg font-semibold mb-2">Navigation</h2>
+          <ul class="space-y-2">
+            <li><a href="#profile" class="block hover:text-green-600">👤 Profile</a></li>
+            <li><a href="#my-items" class="block hover:text-green-600">👚 My Items</a></li>
+            <li><a href="#swaps" class="block hover:text-green-600">🔄 Swaps</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 space-y-12">
+        <!-- Profile Info -->
+        <section id="profile" class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">👤 Profile Info</h2>
+          <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
+          <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+          <p><strong>Location:</strong> <span id="profileLocation">Loading...</span></p>
+          <p><strong>Points Balance:</strong> <span id="profilePoints" class="text-green-600 font-bold">0 pts</span></p>
+        </section>
+
+        <!-- My Items -->
+        <section id="my-items" class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">👚 My Items</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="border p-4 rounded shadow">
+              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" />
+              <h3 class="font-medium">Striped Shirt</h3>
+              <p class="text-sm text-gray-500">Size M · Gently Used</p>
+            </div>
+            <div class="border p-4 rounded shadow">
+              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" />
+              <h3 class="font-medium">Khaki Pants</h3>
+              <p class="text-sm text-gray-500">Size L · Like New</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Swaps -->
+        <section id="swaps" class="bg-white p-6 rounded shadow">
+          <h2 class="text-xl font-semibold mb-4">🔄 Swaps</h2>
+          <div class="mb-6">
+            <h3 class="font-medium text-green-700 mb-2">Ongoing</h3>
+            <ul class="list-disc ml-6 text-sm">
+              <li>Swapping "Red Hoodie" with @alex92 – Awaiting shipment</li>
+              <li>Redeemed "Denim Jacket" – Awaiting confirmation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-600 mb-2">Completed</h3>
+            <ul class="list-disc ml-6 text-sm text-gray-500">
+              <li>Swapped "Vintage Jeans" with @sarahx – Delivered</li>
+              <li>Redeemed "Cotton Tee" – Received</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="text-center py-6 text-sm text-gray-500 mt-12">
+      &copy; 2025 ReWear. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

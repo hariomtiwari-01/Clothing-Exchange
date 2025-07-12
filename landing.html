@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReWear – Landing Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-white text-gray-900">
+    <header class="bg-green-700 text-white p-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">ReWear</h1>
+        <nav>
+          <a href="index.html" class="hover:underline mr-4">Overview</a>
+          <a href="auth.html" class="hover:underline">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="bg-green-100 py-16 text-center">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-4xl font-bold mb-4">Give Clothes a New Life</h2>
+        <p class="text-lg mb-8">Swap or redeem fashion the sustainable way. Join the community today!</p>
+        <div class="space-x-4">
+          <a href="auth.html" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">Start Swapping</a>
+          <a href="dashboard.html" class="bg-white border border-green-600 text-green-600 px-6 py-2 rounded hover:bg-green-50">Browse Items</a>
+          <a href="add-item.html" class="bg-green-500 text-white px-6 py-2 rounded hover:bg-green-600">List an Item</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto py-12 px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Featured Items</h3>
+      <div class="flex overflow-x-auto gap-4 scroll-smooth">
+        <div class="min-w-[200px] flex-shrink-0 border rounded p-4 shadow">
+          <img src="images/item-placeholder.jpg" alt="Item 1" class="w-full h-40 object-cover rounded mb-2" />
+          <h4 class="font-medium">Vintage Jacket</h4>
+          <p class="text-sm text-gray-600">Size M · Gently Used</p>
+        </div>
+        <div class="min-w-[200px] flex-shrink-0 border rounded p-4 shadow">
+          <img src="images/item-placeholder.jpg" alt="Item 2" class="w-full h-40 object-cover rounded mb-2" />
+          <h4 class="font-medium">Denim Skirt</h4>
+          <p class="text-sm text-gray-600">Size S · Like New</p>
+        </div>
+        <div class="min-w-[200px] flex-shrink-0 border rounded p-4 shadow">
+          <img src="images/item-placeholder.jpg" alt="Item 3" class="w-full h-40 object-cover rounded mb-2" />
+          <h4 class="font-medium">Graphic Tee</h4>
+          <p class="text-sm text-gray-600">Size L · New</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-semibold mb-4">How It Works</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-6">
+          <div>
+            <div class="text-green-600 text-4xl mb-2">📸</div>
+            <p class="font-medium">List Your Items</p>
+          </div>
+          <div>
+            <div class="text-green-600 text-4xl mb-2">🔁</div>
+            <p class="font-medium">Swap or Redeem Points</p>
+          </div>
+          <div>
+            <div class="text-green-600 text-4xl mb-2">📦</div>
+            <p class="font-medium">Receive Clothing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100 text-center text-sm text-gray-500 py-6">
+      <nav class="space-x-4 mb-2">
+        <a href="design.html" class="hover:underline">Design</a>
+        <a href="#" class="hover:underline">Contact</a>
+        <a href="#" class="hover:underline">Privacy Policy</a>
+      </nav>
+      &copy; 2025 ReWear. All rights reserved.
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
