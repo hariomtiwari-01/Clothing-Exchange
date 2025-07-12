@@ -1,91 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReWear – User Dashboard</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <header class="bg-green-700 text-white p-4 shadow">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">ReWear Dashboard</h1>
-        <button id="logoutBtn" class="hover:underline">Logout</button>
-      </div>
-    </header>
-
-    <div class="flex max-w-7xl mx-auto mt-8 px-4">
-      <!-- Sidebar -->
-      <aside class="w-64 bg-white rounded shadow p-4 mr-6 space-y-4">
-        <div>
-          <h2 class="text-lg font-semibold mb-2">Navigation</h2>
-          <ul class="space-y-2">
-            <li><a href="#profile" class="block hover:text-green-600">👤 Profile</a></li>
-            <li><a href="#my-items" class="block hover:text-green-600">👚 My Items</a></li>
-            <li><a href="#swaps" class="block hover:text-green-600">🔄 Swaps</a></li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- Main Content -->
-      <main class="flex-1 space-y-12">
-        <!-- Profile Info -->
-        <section id="profile" class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">👤 Profile Info</h2>
-          <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
-          <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
-          <p><strong>Location:</strong> <span id="profileLocation">Loading...</span></p>
-          <p><strong>Points Balance:</strong> <span id="profilePoints" class="text-green-600 font-bold">0 pts</span></p>
-        </section>
-
-        <!-- My Items -->
-        <section id="my-items" class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">👚 My Items</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="border p-4 rounded shadow">
-              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" />
-              <h3 class="font-medium">Striped Shirt</h3>
-              <p class="text-sm text-gray-500">Size M · Gently Used</p>
-            </div>
-            <div class="border p-4 rounded shadow">
-              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" />
-              <h3 class="font-medium">Khaki Pants</h3>
-              <p class="text-sm text-gray-500">Size L · Like New</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Swaps -->
-        <section id="swaps" class="bg-white p-6 rounded shadow">
-          <h2 class="text-xl font-semibold mb-4">🔄 Swaps</h2>
-          <div class="mb-6">
-            <h3 class="font-medium text-green-700 mb-2">Ongoing</h3>
-            <ul class="list-disc ml-6 text-sm">
-              <li>Swapping "Red Hoodie" with @alex92 – Awaiting shipment</li>
-              <li>Redeemed "Denim Jacket" – Awaiting confirmation</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="font-medium text-gray-600 mb-2">Completed</h3>
-            <ul class="list-disc ml-6 text-sm text-gray-500">
-              <li>Swapped "Vintage Jeans" with @sarahx – Delivered</li>
-              <li>Redeemed "Cotton Tee" – Received</li>
-            </ul>
-          </div>
-        </section>
-      </main>
-    </div>
-
-    <footer class="text-center py-6 text-sm text-gray-500 mt-12">
-      &copy; 2025 ReWear. All rights reserved.
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -152,20 +64,23 @@
             <span>My Items</span>
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Example Item 1 -->
             <div class="border p-4 rounded shadow hover:shadow-lg transition cursor-pointer">
-              <img src="https://th.bing.com/th/id/OIP._-NGX57kSZlSo1wnlsns0gHaIx?w=168&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="h-40 w-full object-cover rounded mb-2" alt="Striped Shirt" />
+              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" alt="Striped Shirt" />
               <h3 class="font-medium">Striped Shirt</h3>
               <p class="text-sm text-gray-500">Size M · Gently Used</p>
               <span class="inline-block mt-1 bg-green-100 text-green-700 px-2 py-1 rounded text-xs">Available</span>
             </div>
+            <!-- Example Item 2 -->
             <div class="border p-4 rounded shadow hover:shadow-lg transition cursor-pointer">
-              <img src="data:image/webp;base64,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" class="h-40 w-full object-cover rounded mb-2" alt="Khaki Pants" />
+              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" alt="Khaki Pants" />
               <h3 class="font-medium">Khaki Pants</h3>
               <p class="text-sm text-gray-500">Size L · Like New</p>
               <span class="inline-block mt-1 bg-yellow-100 text-yellow-700 px-2 py-1 rounded text-xs">Pending</span>
             </div>
+            <!-- Example Item 3 -->
             <div class="border p-4 rounded shadow hover:shadow-lg transition cursor-pointer">
-              <img src="https://th.bing.com/th/id/OIP.efCR4JQMzfARVB9PN2QF1AHaE2?w=288&h=189&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="h-40 w-full object-cover rounded mb-2" alt="Blue Jacket" />
+              <img src="images/item-placeholder.jpg" class="h-40 w-full object-cover rounded mb-2" alt="Blue Jacket" />
               <h3 class="font-medium">Blue Jacket</h3>
               <p class="text-sm text-gray-500">Size L · Gently Used</p>
               <span class="inline-block mt-1 bg-red-100 text-red-700 px-2 py-1 rounded text-xs">Swapped</span>
@@ -173,7 +88,7 @@
           </div>
         </section>
 
-        <!-- Swaps -->
+        <!-- Swaps Section -->
         <section id="swaps" class="bg-white p-6 rounded shadow">
           <h2 class="text-xl font-semibold mb-4 flex items-center space-x-2">
             <span>🔄</span>
@@ -201,7 +116,6 @@
       &copy; 2025 ReWear. All rights reserved.
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
->>>>>>> e0adf37 (Update modified pages)
