@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Optional custom styles *//* style.css */
 
 /* Optional custom classes for transitions or layout tweaks */
@@ -12,3 +13,19 @@ body {
 .image-preview img:hover {
   transform: scale(1.05);
 }
+=======
+/* Optional custom styles *//* style.css */
+
+/* Optional custom classes for transitions or layout tweaks */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.image-preview img {
+  transition: transform 0.2s ease;
+}
+
+.image-preview img:hover {
+  transform: scale(1.05);
+}
+>>>>>>> e0adf37 (Update modified pages)
