@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -102,3 +103,117 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReWear – Add New Item</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <header class="bg-green-700 text-white p-4 shadow">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">ReWear</h1>
+        <nav>
+          <a href="dashboard.html" class="hover:underline mr-4">Dashboard</a>
+          <a href="#" id="logoutBtn" class="hover:underline">Logout</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto mt-10 px-4">
+      <h2 class="text-2xl font-bold mb-6">➕ Add New Item</h2>
+
+      <form class="bg-white p-6 rounded shadow space-y-6" action="#" method="POST" novalidate>
+        <!-- Image Upload -->
+        <div>
+          <label for="images" class="block mb-2 font-medium">Upload Images</label>
+          <input id="images" type="file" name="images" multiple accept="image/*" class="block w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500" required />
+          <p class="mt-1 text-sm text-red-600 hidden" id="imagesError">Please upload at least one image.</p>
+        </div>
+
+        <!-- Title -->
+        <div>
+          <label for="title" class="block mb-1 font-medium">Title</label>
+          <input id="title" type="text" name="title" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required />
+          <p class="mt-1 text-sm text-red-600 hidden" id="titleError">Title is required.</p>
+        </div>
+
+        <!-- Description -->
+        <div>
+          <label for="description" class="block mb-1 font-medium">Description</label>
+          <textarea id="description" name="description" rows="4" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+          <p class="mt-1 text-sm text-red-600 hidden" id="descriptionError">Description is required.</p>
+        </div>
+
+        <!-- Category -->
+        <div>
+          <label for="category" class="block mb-1 font-medium">Category</label>
+          <select id="category" name="category" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+            <option value="">Select</option>
+            <option>Topwear</option>
+            <option>Bottomwear</option>
+            <option>Footwear</option>
+            <option>Outerwear</option>
+          </select>
+          <p class="mt-1 text-sm text-red-600 hidden" id="categoryError">Please select a category.</p>
+        </div>
+
+        <!-- Type -->
+        <div>
+          <label for="type" class="block mb-1 font-medium">Type</label>
+          <input id="type" type="text" name="type" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="e.g., Jacket, Jeans" required />
+          <p class="mt-1 text-sm text-red-600 hidden" id="typeError">Type is required.</p>
+        </div>
+
+        <!-- Size -->
+        <div>
+          <label for="size" class="block mb-1 font-medium">Size</label>
+          <select id="size" name="size" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+            <option value="">Select</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+          </select>
+          <p class="mt-1 text-sm text-red-600 hidden" id="sizeError">Please select a size.</p>
+        </div>
+
+        <!-- Condition -->
+        <div>
+          <label for="condition" class="block mb-1 font-medium">Condition</label>
+          <select id="condition" name="condition" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+            <option value="">Select</option>
+            <option>New</option>
+            <option>Gently Used</option>
+            <option>Like New</option>
+          </select>
+          <p class="mt-1 text-sm text-red-600 hidden" id="conditionError">Please select a condition.</p>
+        </div>
+
+        <!-- Tags -->
+        <div>
+          <label for="tags" class="block mb-1 font-medium">Tags (comma separated)</label>
+          <input id="tags" type="text" name="tags" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" required />
+          <p class="mt-1 text-sm text-red-600 hidden" id="tagsError">Please enter at least one tag.</p>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex justify-end gap-4 pt-4">
+          <button type="reset" class="bg-gray-300 text-gray-800 px-4 py-2 rounded hover:bg-gray-400">Cancel</button>
+          <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="text-center py-6 text-sm text-gray-500 mt-12">
+      &copy; 2025 ReWear. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+>>>>>>> e0adf37 (Update modified pages)
