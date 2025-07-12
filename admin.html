@@ -1,97 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReWear – Admin Panel</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <header class="bg-green-700 text-white p-4 shadow">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">ReWear Admin</h1>
-        <nav>
-          <a href="dashboard.html" class="hover:underline mr-4">Dashboard</a>
-          <a href="#" id="logoutBtn" class="hover:underline">Logout</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="max-w-6xl mx-auto mt-10 px-4">
-      <h2 class="text-2xl font-bold mb-6">🛠️ Admin Panel</h2>
-
-      <!-- Pending Items Section -->
-      <section class="mb-10">
-        <h3 class="text-xl font-semibold mb-4">Pending Items</h3>
-        <div class="overflow-x-auto">
-          <table class="min-w-full bg-white border rounded shadow">
-            <thead class="bg-gray-100">
-              <tr>
-                <th class="text-left p-3">Image</th>
-                <th class="text-left p-3">Title</th>
-                <th class="text-left p-3">Condition</th>
-                <th class="text-left p-3">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-t">
-                <td class="p-3">
-                  <img src="images/item-placeholder.jpg" class="w-16 h-16 object-cover rounded" />
-                </td>
-                <td class="p-3">Corduroy Jacket</td>
-                <td class="p-3">Gently Used</td>
-                <td class="p-3 space-x-2">
-                  <button class="approve-btn bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700">Approve</button>
-                  <button class="reject-btn bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">Reject</button>
-                </td>
-              </tr>
-              <!-- More rows as needed -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Reported Items Section -->
-      <section>
-        <h3 class="text-xl font-semibold mb-4">Reported Items</h3>
-        <div class="overflow-x-auto">
-          <table class="min-w-full bg-white border rounded shadow">
-            <thead class="bg-gray-100">
-              <tr>
-                <th class="text-left p-3">Image</th>
-                <th class="text-left p-3">Title</th>
-                <th class="text-left p-3">Reason</th>
-                <th class="text-left p-3">Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="border-t">
-                <td class="p-3">
-                  <img src="images/item-placeholder.jpg" class="w-16 h-16 object-cover rounded" />
-                </td>
-                <td class="p-3">Torn T-Shirt</td>
-                <td class="p-3">Inappropriate image</td>
-                <td class="p-3">
-                  <button class="remove-btn bg-red-600 text-white px-3 py-1 rounded hover:bg-red-700">Remove</button>
-                </td>
-              </tr>
-              <!-- More rows as needed -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-
-    <footer class="text-center py-6 mt-12 text-sm text-gray-500">
-      &copy; 2025 ReWear. All rights reserved.
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
@@ -162,7 +68,7 @@
             <tbody>
               <tr class="border-t hover:bg-red-50 transition">
                 <td class="p-3">
-                  <img src="data:image/webp;base64,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" class="w-16 h-16 object-cover rounded" alt="Torn T-Shirt" />
+                  <img src="images/item-placeholder.jpg" class="w-16 h-16 object-cover rounded" alt="Torn T-Shirt" />
                 </td>
                 <td class="p-3 font-medium">Torn T-Shirt</td>
                 <td class="p-3">Inappropriate image</td>
@@ -181,7 +87,6 @@
       &copy; 2025 ReWear. All rights reserved.
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
->>>>>>> e0adf37 (Update modified pages)
