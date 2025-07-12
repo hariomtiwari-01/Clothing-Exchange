@@ -1,55 +1,11 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ReWear – Project Overview</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body class="bg-white text-gray-800">
-    <header class="bg-green-700 text-white p-4 shadow">
-      <div class="max-w-6xl mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">ReWear</h1>
-        <nav>
-          <a href="landing.html" class="hover:underline mr-4">Home</a>
-          <a href="auth.html" class="hover:underline">Login</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="max-w-4xl mx-auto py-12 px-4">
-      <h2 class="text-3xl font-semibold mb-4">Project Overview</h2>
-      <p class="mb-4">ReWear is a community-driven platform promoting sustainable fashion by encouraging clothing reuse through direct swaps and a point-based redemption system.</p>
-
-      <ul class="list-disc ml-6 space-y-2 mb-6">
-        <li>🌱 Direct clothing swaps or point-based redemption</li>
-        <li>🔐 User authentication with email/password</li>
-        <li>🛠 Admin moderation tools</li>
-        <li>🎯 Target Audience: Eco-conscious users, thrift lovers, sustainable shoppers</li>
-      </ul>
-
-      <a href="landing.html" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Explore the Platform</a>
-    </main>
-
-    <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500 mt-12">
-      &copy; 2025 ReWear. All rights reserved.
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ReWear – Sustainable Fashion Community</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      /* Unique styles for the new index page */
       body {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background: linear-gradient(135deg, #f0f9f4, #d0e8d0);
@@ -83,7 +39,7 @@
       }
       .hero {
         text-align: center;
-        padding: 6rem 2rem 4rem;
+        padding: 6rem 2rem 3rem;
       }
       .hero h2 {
         font-size: 3rem;
@@ -145,6 +101,20 @@
         font-size: 1rem;
         color: #4a6b4a;
       }
+      .overview {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+      .overview ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
       .community {
         background-color: #e6f0e6;
         padding: 4rem 2rem;
@@ -197,8 +167,22 @@
     <section class="hero" role="banner" aria-label="Platform introduction">
       <h2>Wear Sustainably, Live Responsibly</h2>
       <p>Join a community passionate about sustainable fashion. Swap clothes, earn points, and make a positive impact on the planet.</p>
+      <a href="#overview" class="btn-primary" role="button">Explore Overview</a>
       <a href="landing.html" class="btn-primary" role="button">Get Started</a>
-      <a href="landing.html#features" class="btn-primary" role="button">Learn More</a>
+    </section>
+
+    <section id="overview" class="overview">
+      <h2 class="text-3xl font-semibold mb-4">Project Overview</h2>
+      <p class="mb-4">ReWear is a community-driven platform promoting sustainable fashion by encouraging clothing reuse through direct swaps and a point-based redemption system.</p>
+
+      <ul class="space-y-2 mb-6">
+        <li>🌱 Direct clothing swaps or point-based redemption</li>
+        <li>🔐 User authentication with email/password</li>
+        <li>🛠 Admin moderation tools</li>
+        <li>🎯 Target Audience: Eco-conscious users, thrift lovers, sustainable shoppers</li>
+      </ul>
+
+      <a href="landing.html" class="btn-primary">Explore the Platform</a>
     </section>
 
     <section id="features" class="features" aria-label="Platform features">
@@ -229,4 +213,3 @@
     </footer>
   </body>
 </html>
->>>>>>> e0adf37 (Update modified pages)
